@@ -35,8 +35,15 @@ public class ControlFlow {
 
         //loops
         //for
-        for (int i=0;i< 10;i++){
-            System.out.println("Count: " + i);
+//        for (int i=0;i< 10;i++){
+////            System.out.println("Count: " + i);
+//        }
+        //while
+        int num=3;
+        while (num>0){
+            System.out.println("Num: "+ num);
+            num--;
         }
+
     }
 }
