@@ -44,6 +44,17 @@ public class ControlFlow {
             System.out.println("Num: "+ num);
             num--;
         }
+        //do while
+        int n=3;
+        do{
+            System.out.println("n: "+n);
+            n--;
+        }while (n>0);
 
+        //enhanced for loop
+        String[] fruits={"Apples","Banana"};
+        for(String e:fruits){
+            System.out.println(e);
+        }
     }
 }
