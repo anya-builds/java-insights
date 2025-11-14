@@ -32,5 +32,11 @@ public class ControlFlow {
             case "Friday" -> System.out.println("Last day of the week");
             default -> System.out.println("Enjoy weekend");
         }
+
+        //loops
+        //for
+        for (int i=0;i< 10;i++){
+            System.out.println("Count: " + i);
+        }
     }
 }
