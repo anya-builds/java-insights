@@ -1,5 +1,7 @@
 package two.constructors;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class Car {
     String brand;
     String color;
@@ -16,5 +18,7 @@ public class Car {
     public  void drive(){
         System.out.println(brand + " is driving at "+ speed);
     }
-
+     public int getSpeed(){
+        return speed;
+     }
 }

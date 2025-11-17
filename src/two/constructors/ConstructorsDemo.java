@@ -16,6 +16,7 @@ public class ConstructorsDemo {
 
 //        Date date = new Date();
 //        date.
+        System.out.println(car2.getSpeed());
 
     }
 }
