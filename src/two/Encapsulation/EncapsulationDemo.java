@@ -9,7 +9,8 @@ class Car {
 //        System.out.println("Constructor Called");
         this.brand = brand;
         this.color = color;
-        this.speed = speed;
+//        this.speed = speed;
+        setSpeed(speed);
 
     }
 
