@@ -8,6 +8,7 @@ public class RecordDemo {
         System.out.println("Brand: "+ bike
                 .brand());
         System.out.println("Speed: "+ bike.speed());
+        System.out.println(bike);
     }
 
 }
