@@ -5,8 +5,12 @@ public class Car {
     String color;
     int speed;
 
-    public Car(){
-        System.out.println("Constructor Called");
+    public Car(String brand,String color,int speed){
+//        System.out.println("Constructor Called");
+        this.brand=brand;
+        this.color=color;
+        this.speed=speed;
+
     }
 
     public  void drive(){
