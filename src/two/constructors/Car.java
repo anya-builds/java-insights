@@ -21,4 +21,7 @@ public class Car {
      public int getSpeed(){
         return speed;
      }
+     public String getBrand(){
+        return brand;
+     }
 }
