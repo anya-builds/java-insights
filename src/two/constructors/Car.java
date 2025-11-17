@@ -5,7 +5,7 @@ import org.w3c.dom.ls.LSOutput;
 public class Car {
     String brand;
     String color;
-    int speed;
+   int speed;
 
     public Car(String brand,String color,int speed){
 //        System.out.println("Constructor Called");
@@ -24,4 +24,7 @@ public class Car {
      public String getBrand(){
         return brand;
      }
+    public void setSpeed(int speed){
+        this.speed=speed;
+    }
 }
