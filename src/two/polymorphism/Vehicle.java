@@ -1,4 +1,4 @@
-package two.inheritance;
+package two.polymorphism;
 
 public class Vehicle {
     private String brand;
@@ -7,6 +7,11 @@ public class Vehicle {
     public Vehicle(String brand,int speed){
         this.brand=brand;
         this.speed=speed;
+    }
+
+//    @Override
+    public void start(){
+        System.out.println("Starting Vehicle...");
     }
     public int getSpeed() {
         return speed;
