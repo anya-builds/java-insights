@@ -31,8 +31,9 @@ public class MethodReferencesDemo {
 //       names.forEach((name)->{
 //           System.out.println(name);
 //       });
-
-       names.forEach((String name)->
-           System.out.println(name));
+//
+//       names.forEach((String name)->
+//           System.out.println(name));
+       names.forEach(System.out::println);
     }
 }
