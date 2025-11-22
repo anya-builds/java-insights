@@ -1,5 +1,8 @@
 package five.streams;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.IntStream;
@@ -23,5 +26,17 @@ public class DifferentSourcesDemo {
         int[] numberArray = {1,2,3,4,5};
         IntStream arrayStream = Arrays.stream(numberArray);
         arrayStream.forEach(System.out::println);
+
+        Stream<String> stringStream = Stream.of("a", "b", "c");
+        Stream<Integer> integerStream1 = Stream.iterate(0, n -> n + 2);
+        integerStream1.forEach(System.out::println);
+
+        try {
+            Stream<String> fileStream = Files.lines(Path.of("PATH"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        Stream<String> emptyStream = Stream.empty();
     }
 }
