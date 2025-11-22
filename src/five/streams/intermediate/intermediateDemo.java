@@ -2,6 +2,8 @@ package five.streams.intermediate;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 public class intermediateDemo {
     public static void main(String[] args) {
@@ -16,6 +18,18 @@ public class intermediateDemo {
                 new Book("Technology", 40.00, 2023, "Advanced Spring Boot"),
                 new Book("Biography", 16.99, 2019, "The Innovator's Journey"),
                 new Book("Fiction", 9.99, 1998, "Old Man and the Sea")
+                // 1. filtering: books cheaper than 20
+
         );
+        // 1. filtering: books cheaper than 20
+        Stream<Book> stream1= books.stream();
+        Stream<Book> stream2= stream1.filter(predicate);
+        stream2.forEach(System.out::println);
     }
+    static Predicate<Book> predicate=new Predicate<Book>() {
+        @Override
+        public boolean test(Book book) {
+            return book.price <20;
+        }
+    };
 }
